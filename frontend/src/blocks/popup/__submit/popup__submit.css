@@ -1,0 +1,37 @@
+.popup__submit {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 48px auto 36px;
+    padding: 0;
+    transition: opacity .3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.popup__submit:hover {
+    opacity: 0.8;
+}
+
+.popup__submit:disabled {
+    background-color: transparent;
+    opacity: 0.2;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .popup__submit {
+        font-size: 14px;
+        line-height: 1.21;
+        margin-bottom: 25px;
+        margin-top: 45px;
+    }
+}

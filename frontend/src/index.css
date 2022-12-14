@@ -1,0 +1,69 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/body/body.css);
+@import url(./blocks/page/page.css);
+
+
+/* Раздел header*/
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/header/__button/header__button.css);
+@import url(./blocks/header/__info/header__info.css);
+@import url(./blocks/header/__email/header__email.css);
+
+
+/* Раздел popup*/
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__content/popup__content.css);
+@import url(./blocks/popup/__close/popup__close.css);
+@import url(./blocks/popup/__title/popup__title.css);
+@import url(./blocks/popup/__form/popup__form.css);
+@import url(./blocks/popup/__input/popup__input.css);
+@import url(./blocks/popup/__input-error/popup__input-error.css);
+@import url(./blocks/popup/__input-error/_active/popup__input-error_active.css);
+@import url(./blocks/popup/__submit/popup__submit.css);
+@import url(./blocks/popup/__submit/_disabled/popup__submit_disabled.css);
+@import url(./blocks/popup/__register-image/popup__register-image.css);
+@import url(./blocks/popup/__message/popup__message.css);
+
+
+/* Раздел popup с картинкой*/
+@import url(./blocks/popup/__image-container/popup__image-container.css);
+@import url(./blocks/popup/__figure/popup__figure.css);
+@import url(./blocks/popup/__img/popup__img.css);
+@import url(./blocks/popup/__img-title/popup__img-title.css);
+
+
+/* Раздел profile*/
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__avatar-img/profile__avatar-img.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__text/profile__text.css);
+@import url(./blocks/profile/__title/profile__title.css);
+@import url(./blocks/profile/__subtitle/profile__subtitle.css);
+@import url(./blocks/profile/__edit/profile__edit.css);
+@import url(./blocks/profile/__add/profile__add.css);
+
+/* Раздел elements*/
+@import url(./blocks/elements/__container/elements__container.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__trash/card__trash.css);
+@import url(./blocks/card/__img/card__img.css);
+@import url(./blocks/card/__text/card__text.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__button/card__button.css);
+@import url(./blocks/card/__like-counter/card__like-counter.css);
+@import url(./blocks/card/__like/card__like.css);
+
+/* Раздел footer*/
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+/* Раздел sign-up*/
+@import url(./blocks/sign-up/sign-up.css);
+/* Раздел sign-in*/
+@import url(./blocks/sign-in/sign-in.css);

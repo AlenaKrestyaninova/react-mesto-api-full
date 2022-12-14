@@ -1,0 +1,14 @@
+.popup__form {
+    padding-top: 54px;
+    width: calc(100% - 2*36px);
+    margin: 0 auto;
+    outline: none;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .popup__form {
+        padding-top: 75px;
+        width: calc(100% - 2*22px);
+    }
+}

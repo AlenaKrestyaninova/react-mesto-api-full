@@ -1,0 +1,6 @@
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .header__logo {
+        width: 104px;
+    }
+}

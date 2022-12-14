@@ -1,0 +1,14 @@
+.header__button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .header__button {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

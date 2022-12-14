@@ -1,0 +1,17 @@
+.header__email {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0;
+    padding-right: 24px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .header__email {
+        font-size: 14px;
+        line-height: 17px;
+        padding-right: 14px;
+    }
+}

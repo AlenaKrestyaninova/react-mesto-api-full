@@ -1,0 +1,22 @@
+.profile__subtitle {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #FFFFFF;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .profile__subtitle {
+        font-size: 14px;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 36px;
+    }
+}

@@ -1,0 +1,11 @@
+.profile__text {
+    max-width: 342px;
+
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .profile__text {
+        max-width: calc(100% - 38px);
+    }
+}

@@ -1,0 +1,32 @@
+.profile__add {
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+    justify-self: end;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer;
+    background-image: url(../../../images/Add_Button.svg);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile__add:hover {
+    opacity: 0.6;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .profile__add {
+        width: 100%;
+        justify-self: center;
+        background-size: 16px 16px;
+    }
+}

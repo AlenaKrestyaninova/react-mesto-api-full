@@ -1,0 +1,12 @@
+.popup__content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 36px 60px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .popup__content {
+        padding: 50px 18px 50px;
+    }
+}

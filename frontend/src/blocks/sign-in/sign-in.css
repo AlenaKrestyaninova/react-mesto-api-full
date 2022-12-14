@@ -1,0 +1,72 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    text-align: center;
+    height: 100%;
+}
+
+.sign-in__title {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.sign-in__form {
+    display: block;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.sign-in__input {
+    display: block;
+    width: 358px;
+    margin: 0 auto 0;
+    padding: 0;
+    height: 57px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CCCCCC;
+}
+
+.sign-in__input:focus {
+    color: #FFFFFF;
+}
+
+.sign-in__submit {
+    width: 358px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    padding: 0;
+    justify-content: center;
+    margin-top: 216px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .sign-in {
+        margin-top: 40px;
+    }
+    .sign-in__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .sign-in__form {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .sign-in__input {
+        max-width: 100%;
+    }
+    .sign-in__submit {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 173px;
+    }
+}

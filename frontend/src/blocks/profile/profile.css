@@ -1,0 +1,18 @@
+.profile {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 120px 1fr 150px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .profile {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, max-content);
+        justify-items: center;
+        padding-top: 42px;
+    }
+}

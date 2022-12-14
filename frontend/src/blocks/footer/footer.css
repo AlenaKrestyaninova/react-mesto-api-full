@@ -1,0 +1,14 @@
+.footer {
+    padding-top: 67px;
+    padding-bottom: 60px;
+}
+
+
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .footer {
+        padding-top: 48px;
+        padding-bottom: 36px;
+    }
+}
