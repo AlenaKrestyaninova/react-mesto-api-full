@@ -4,14 +4,14 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const { errors } = require('celebrate');
 const cors = require('cors');
-const cardsRouter = require('./routes/cards');
-const usersRouter = require('./routes/users');
-const { createUser } = require('./controllers/users');
-const { login } = require('./controllers/login');
-const { validateLogin, validateUserCreate } = require('./middlewares/userValidation');
-const auth = require('./middlewares/auth');
+const routes = require('./routes');
+// const cardsRouter = require('./routes/cards');
+// const usersRouter = require('./routes/users');
+// const { createUser } = require('./controllers/users');
+// const { login } = require('./controllers/login');
+// const auth = require('./middlewares/auth');
 const serverError = require('./utils/serverError');
-const NotFoundError = require('./utils/errors/NotFoundError'); // 404
+// const NotFoundError = require('./utils/errors/NotFoundError'); // 404
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const options = {
@@ -47,14 +47,15 @@ app.get('/crash-test', () => {
   }, 0);
 });
 
-app.post('/signin', validateLogin, login);
-app.post('/signup', validateUserCreate, createUser);
+app.use('/', routes);
+// app.use(login);
+// app.use(createUser);
 
-app.use(auth);
+// app.use(auth);
 
-app.use(cardsRouter);
-app.use(usersRouter);
-app.use('*', () => { throw new NotFoundError('По вашему запросу ничего не найдено'); });
+// app.use(cardsRouter);
+// app.use(usersRouter);
+// app.use('*', () => { throw new NotFoundError('По вашему запросу ничего не найдено'); });
 app.use(errorLogger);
 app.use(errors());
 app.use(serverError);
